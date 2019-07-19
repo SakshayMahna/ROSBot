@@ -1,0 +1,8 @@
+prefix=/home/sakshay/Desktop/ROSBot/install
+
+Name: drive
+Description: Description of drive
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sakshay/Desktop/ROSBot/install/lib 
+Requires: 

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="drive" type="motor_command" name="motor_publisher" output="screen" />
+    <node pkg="drive" type="motor_receive" name="motor_subscriber" output="screen" />
+</launch>
