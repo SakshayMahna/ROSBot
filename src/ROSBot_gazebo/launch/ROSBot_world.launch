@@ -1,0 +1,11 @@
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find ROSBot_description)/urdf/ROSBot.xacro'" />
+    <node name="ROSBot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model ROSBot"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find ROSBot_gazebo)/worlds/ROSBot.world"/>
+        <arg name="gui" value="true"/>
+    </include>
+
+    <include file="$(find ROSBot_control)/launch/ROSBot_control.launch"/>
+</launch>

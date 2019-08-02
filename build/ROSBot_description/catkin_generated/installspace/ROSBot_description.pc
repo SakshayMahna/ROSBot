@@ -1,0 +1,8 @@
+prefix=/home/sakshay/Desktop/ROSBot/install
+
+Name: ROSBot_description
+Description: Description of ROSBot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sakshay/Desktop/ROSBot/install/lib 
+Requires: 
